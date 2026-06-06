@@ -1,0 +1,16 @@
+# Makefile_1738
+# IE2102 - Network Programming Assignment
+# Registration: IT24101738
+# Build: make -f Makefile_1738
+
+CC     = gcc
+TARGET = server_1738
+SRC    = server_1738.c
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) -o $(TARGET) $(SRC)
+
+clean:
+	rm -f $(TARGET)
